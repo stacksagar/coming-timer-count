@@ -1,0 +1,98 @@
+body {
+ min-width: 100%;
+ background: linear-gradient(#0000006f, #0000006f), url(../images/bg.jpg) no-repeat;
+ background-position: center center;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+.timer {
+ text-align: center;
+ width: 100%;
+ min-height: calc(100vh - 55px);
+ max-height: auto;
+ background: #00000089;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.timer .timer-title {
+ width: 100%;
+ padding: 10px 0px;
+ background: #555555;
+ border: 5px solid #999999;
+ z-index: 1;
+}
+
+.timer .timer-container {
+ width: 400px;
+ padding: 40px 0px;
+ padding-top: 30px;
+ background: #555555;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ border-radius: 0px 0px 20px 20px;
+ border: 5px solid #999999;
+ margin-top: -4.60px;
+ border-top: unset !important;
+ z-index: 2;
+}
+
+.timer .timer-container h1 {
+ font-size: 3rem;
+}
+
+.total-timer {
+ background: #00000077;
+ width: 400px;
+ padding: 20px;
+ margin-top: -15px;
+ padding-top: 35px;
+ z-index: 1;
+ border-radius: 0px 0px 10px 10px;
+ position: relative;
+}
+
+.total-timer div {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border: 1.5px solid #333333;
+ border-left: 3px solid #333333;
+ border-right: 3px solid #333333;
+ padding: 5px 8px;
+}
+
+.total-timer div:first-child {
+ border-top: 3px solid #333333;
+ border-radius:10px 10px 0px 0px;
+}
+
+.total-timer div:last-child {
+ border-bottom: 3px solid #333333;
+ border-radius:0px 0px 10px 10px;
+}
+
+.total-timer div h4 {
+ color: #dddddd;
+}
+
+.total-timer div h5 {
+ color: #999999;
+}
+.total-timer::after {
+ content: '';
+ background: url(../images/clock.gif);
+ position: absolute;
+ top:0px;
+ left: 0px;
+ right:0px;
+ bottom:0px;
+ margin: auto;
+ width:70px;
+ height:70px;
+ background-size:100%; 
+}
