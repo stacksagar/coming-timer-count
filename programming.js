@@ -1,5 +1,5 @@
 function timer() {
-	const comingYear = '1 Jan 2021';
+	const comingYear = '1 Jan 2025';
 	const totalMiliSeconds = new Date(comingYear) - new Date();
 	const totalSeconds = (new Date(comingYear) - new Date()) / 1000;
 	const days = Math.floor(totalSeconds / 3600 / 24);
